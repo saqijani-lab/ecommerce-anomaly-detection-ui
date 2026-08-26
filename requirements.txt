@@ -3,3 +3,4 @@ requests
 websockets
 pandas
 plotly
+streamlit-autorefresh
