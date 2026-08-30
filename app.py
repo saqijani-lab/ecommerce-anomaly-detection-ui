@@ -12,8 +12,11 @@ import queue
 API_URL = "https://web-production-015c9.up.railway.app"
 WS_URL = "wss://web-production-015c9.up.railway.app/stream"
 
-st.set_page_config(page_title="E-Commerce Anomaly Monitor", layout="wide")
 st.title("🛡️ Real-Time E-Commerce Anomaly Detection")
+
+# ... (the full instrumented WebSocket/queue block goes here) ...
+
+st.caption(f"WebSocket status: {st.session_state.ws_status_holder['status']}")
 
 # --- Shared queue to pass WebSocket messages into Streamlit's main thread ---
 if "msg_queue" not in st.session_state:
