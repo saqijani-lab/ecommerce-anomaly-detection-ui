@@ -1,5 +1,7 @@
 import streamlit as st
 import asyncio
+from streamlit_autorefresh 
+import st_autorefresh
 import websockets
 import json
 import requests
@@ -102,8 +104,5 @@ if st.session_state.transactions:
 else:
     st.info("No transactions yet — click ▶ Start in the sidebar to begin the live stream.")
 
-# --- Auto-refresh every 2 seconds ---
-st.markdown(
-    """<script>setTimeout(function(){window.location.reload();}, 2000);</script>""",
-    unsafe_allow_html=True
-)
+# --- Auto-refresh every 2 seconds (session-state safe) ---
+st_autorefresh(interval=2000, key="datarefresh")
