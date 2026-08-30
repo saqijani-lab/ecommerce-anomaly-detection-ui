@@ -1,7 +1,4 @@
-import streamlit as st
-import asyncio
-from streamlit_autorefresh 
-import st_autorefresh
+from streamlit_autorefresh import st_autorefresh
 import websockets
 import json
 import requests
