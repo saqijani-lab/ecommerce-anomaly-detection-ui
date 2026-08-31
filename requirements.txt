@@ -1,6 +1,7 @@
-streamlit
-requests
-websockets==12.0
+fastapi
+uvicorn[standard]
+websockets
 pandas
-plotly
-streamlit-autorefresh
+numpy
+scikit-learn==1.6.1
+joblib==1.5.3
