@@ -29,15 +29,13 @@ def ws_listener(q, status_holder):
     async def listen():
         try:
             status_holder["status"] = "connecting"
-            async with asyncio.timeout(10):
-                ws = await websockets.connect(WS_URL)
-            status_holder["status"] = "connected"
-            async with ws:
+            async with websockets.connect(WS_URL, open_timeout=10) as ws:
+                status_holder["status"] = "connected"
                 while True:
                     msg = await asyncio.wait_for(ws.recv(), timeout=15)
                     q.put(json.loads(msg))
         except asyncio.TimeoutError:
-            status_holder["status"] = "error: connection timed out after 10s"
+            status_holder["status"] = "error: timed out waiting for data"
         except Exception as e:
             status_holder["status"] = f"error: {type(e).__name__}: {repr(e)}"
 
