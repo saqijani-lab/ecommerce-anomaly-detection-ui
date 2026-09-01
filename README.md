@@ -4,11 +4,11 @@ A Streamlit dashboard that connects over WebSocket to the [Anomaly Detection API
 
 ## What It Does
 
-- **Live-updating chart** — every transaction streamed from the API is plotted by anomaly score as it arrives, color-coded green (normal) or red X (anomaly)
-- **Adjustable sensitivity** — a threshold slider lets you tune how aggressive the detection is, applied live without restarting the stream
-- **Attack simulation** — a "Simulate Attack" button injects a known fraud pattern into the live stream on demand, so the detection can be demonstrated working in real time rather than waiting passively for an anomaly to occur naturally
-- **Running business metrics** — transactions processed, anomalies flagged, and an estimated dollar value of loss prevented, updating live
-- **Recent alerts table** — a sortable log of flagged transactions with customer, amount, location, and anomaly score
+ **Live-updating chart**  every transaction streamed from the API is plotted by anomaly score as it arrives, color-coded green (normal) or red X (anomaly)
+ **Adjustable sensitivity**  a threshold slider lets you tune how aggressive the detection is, applied live without restarting the stream
+ **Attack simulation**  a "Simulate Attack" button injects a known fraud pattern into the live stream on demand, so the detection can be demonstrated working in real time rather than waiting passively for an anomaly to occur naturally
+ **Running business metrics**  transactions processed, anomalies flagged, and an estimated dollar value of loss prevented, updating live
+ **Recent alerts table**  a sortable log of flagged transactions with customer, amount, location, and anomaly score
 
 ## Why This Matters
 
@@ -29,7 +29,7 @@ Update the `API_URL` and `WS_URL` variables in `app.py` to point at your own dep
 
 ## Live Demo
 
-Deployed at: `<your Streamlit URL here>`
+Deployed at: `<[your Streamlit URL here](https://ecommerce-anomaly-detection-ui-777.streamlit.app/)>`
 
 Backend API: [ecommerce-anomaly-detection](https://github.com/saqijani-lab/ecommerce-anomaly-detection)
 
