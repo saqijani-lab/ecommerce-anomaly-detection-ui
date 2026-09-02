@@ -1,10 +1,10 @@
 # Real-Time E-Commerce Anomaly Detection Live Dashboard
 
-A Streamlit dashboard that connects over WebSocket to the [Anomaly Detection API](https://github.com/saqijani-lab/ecommerce-anomaly-detection), visualizing transactions as they're scored in real time.
+A Streamlit dashboard that connects over WebSocket to the (https://github.com/saqijani-lab/ecommerce-anomaly-detection), visualising transactions as they're scored in real time.
 
 ## What It Does
 
- **Live-updating chart**  every transaction streamed from the API is plotted by anomaly score as it arrives, color-coded green (normal) or red X (anomaly)
+ **Live-updating chart**  every transaction streamed from the API is plotted by anomaly score as it arrives, colour-coded green (normal) or red X (anomaly)
  **Adjustable sensitivity**  a threshold slider lets you tune how aggressive the detection is, applied live without restarting the stream
  **Attack simulation**  a "Simulate Attack" button injects a known fraud pattern into the live stream on demand, so the detection can be demonstrated working in real time rather than waiting passively for an anomaly to occur naturally
  **Running business metrics**  transactions processed, anomalies flagged, and an estimated dollar value of loss prevented, updating live
@@ -29,8 +29,7 @@ Update the `API_URL` and `WS_URL` variables in `app.py` to point at your own dep
 
 ## Live Demo
 
-Deployed at: `<[your Streamlit URL here](https://ecommerce-anomaly-detection-ui-777.streamlit.app/)>`
-
+Deployed at:[https://ecommerce-anomaly-detection-ui-777.streamlit.app/]
 Backend API: [ecommerce-anomaly-detection](https://github.com/saqijani-lab/ecommerce-anomaly-detection)
 
 ## A Note on Debugging This Build
