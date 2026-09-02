@@ -1,4 +1,4 @@
-# Real-Time E-Commerce Anomaly Detection — Live Dashboard
+# Real-Time E-Commerce Anomaly Detection Live Dashboard
 
 A Streamlit dashboard that connects over WebSocket to the [Anomaly Detection API](https://github.com/saqijani-lab/ecommerce-anomaly-detection), visualizing transactions as they're scored in real time.
 
